@@ -27,7 +27,7 @@ public class FeedFragment extends Fragment {
 
     private ArrayList<String> mName = new ArrayList<>();
     private ArrayList<String> mDate = new ArrayList<>();
-    private ArrayList<String> mText = new ArrayList<>();
+    private ArrayList<String> mTitle = new ArrayList<>();
     private ArrayList<String> mSubtext = new ArrayList<>();
 
 
@@ -41,7 +41,7 @@ public class FeedFragment extends Fragment {
         initMessages();
 
         RecyclerView recyclerViewMain = view.findViewById(R.id.recycler_view_feed);
-        FeedAdapter adapterMain = new FeedAdapter( this.getActivity(), mName, mDate, mText, mSubtext);
+        FeedAdapter adapterMain = new FeedAdapter( this.getActivity(), mName, mDate, mTitle, mSubtext);
         recyclerViewMain.setAdapter(adapterMain);
         recyclerViewMain.setLayoutManager(new LinearLayoutManager(this.getActivity()));
 
@@ -56,120 +56,120 @@ public class FeedFragment extends Fragment {
 
         mName.add("John Johnson");
         mDate.add("Nov. 12");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
         mName.add("John Johnson");
         mDate.add("Nov. 11");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 10");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 9");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 8");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 7");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 6");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 5");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 4");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 3");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 2");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Nov. 1");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 30");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 29");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 28");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 27");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 26");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 25");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 24");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
         mName.add("John Johnson");
         mDate.add("Oct. 23");
-        mText.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra");
         mSubtext.add(null);
 
 
