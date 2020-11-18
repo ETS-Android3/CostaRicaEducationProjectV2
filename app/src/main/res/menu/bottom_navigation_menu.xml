@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_item_one"
+        android:enabled="true"
+        android:icon="@drawable/house_svgrepo_com"
+        android:title="Feed"/>
+
+    <item
+        android:id="@+id/nav_item_two"
+        android:enabled="true"
+        android:icon="@drawable/singlebookwithbookmark"
+        android:title="Resources"/>
+
+    <item
+        android:id="@+id/nav_item_three"
+        android:enabled="true"
+        android:icon="@drawable/three_dots_svgrepo_com"
+        android:title="More"/>
+
+</menu>
