@@ -10,25 +10,25 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.apache.commons.lang3.text.WordUtils;
 
 import java.util.ArrayList;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolderFeed> {
     private ArrayList<String> mNameFeed = new ArrayList<>();
     private ArrayList<String> mDateFeed = new ArrayList<>();
-    private ArrayList<String> mTextFeed = new ArrayList<>();
+    private ArrayList<String> mTitleFeed = new ArrayList<>();
     private ArrayList<String> mSubtextFeed = new ArrayList<>();
     private Context mContextFeed;
 
     public FeedAdapter(Context context, ArrayList<String> name, ArrayList<String> date, ArrayList<String> text, ArrayList<String> subtext){
         mNameFeed = name;
         mDateFeed = date;
-        mTextFeed = text;
+        mTitleFeed = text;
         mSubtextFeed = subtext;
         mContextFeed = context;
     }
@@ -45,14 +45,14 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolderFeed
     public void onBindViewHolder(@NonNull ViewHolderFeed holder, int position) {
         holder.nameFeed.setText(mNameFeed.get(position));
         holder.dateFeed.setText(mDateFeed.get(position));
-        holder.nameFeed.setText(mNameFeed.get(position));
+        holder.titleFeed.setText(WordUtils.capitalizeFully(mTitleFeed.get(position)));
         holder.subtextFeed.setText(mSubtextFeed.get(position));
     }
 
 
     @Override
     public int getItemCount(){
-        return mTextFeed.size();
+        return mTitleFeed.size();
     }
 
     public class ViewHolderFeed extends RecyclerView.ViewHolder{
