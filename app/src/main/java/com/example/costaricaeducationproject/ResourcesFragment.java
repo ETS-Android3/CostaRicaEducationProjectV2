@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -37,6 +38,24 @@ public class ResourcesFragment extends Fragment implements View.OnClickListener 
         CardView OnlineLibraies = (CardView) view.findViewById(R.id.online_libraries);
         OnlineLibraies.setOnClickListener(this);
 
+        CardView algebraButton = (CardView) view.findViewById(R.id.algebra);
+        algebraButton.setOnClickListener(this);
+
+        CardView geometryButton = (CardView) view.findViewById(R.id.geometry);
+        geometryButton.setOnClickListener(this);
+
+        CardView writingButton = (CardView) view.findViewById(R.id.writing);
+        writingButton.setOnClickListener(this);
+
+        CardView readingButton = (CardView) view.findViewById(R.id.reading);
+        readingButton.setOnClickListener(this);
+
+        CardView historyButton = (CardView) view.findViewById(R.id.history);
+        historyButton.setOnClickListener(this);
+
+        CardView otherButton = (CardView) view.findViewById(R.id.other);
+        otherButton.setOnClickListener(this);
+
 
 
         return view;
@@ -51,7 +70,67 @@ public class ResourcesFragment extends Fragment implements View.OnClickListener 
                 assert getFragmentManager() != null;
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment_container, new DownloadedFragment(), "NewFragmentTag");
-                ft.commit();
+                ft.addToBackStack("true").commit();
+                break;
+
+            case R.id.algebra:
+                DirectoryFragment algabraFragment = new DirectoryFragment();
+                Bundle algabraBundle = new Bundle();
+                algabraBundle.putString("subject", "algebra");
+                algabraBundle.putBoolean("downloaded", false);
+                algabraFragment.setArguments(algabraBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, algabraFragment, "NewFragmentTag").addToBackStack("true").commit();
+                break;
+
+            case R.id.geometry:
+                DirectoryFragment geometryFragment = new DirectoryFragment();
+                Bundle geometryBundle = new Bundle();
+                geometryBundle.putString("subject", "geometry");
+                geometryBundle.putBoolean("downloaded", false);
+                geometryFragment.setArguments(geometryBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, geometryFragment, "NewFragmentTag").addToBackStack("true").commit();
+                break;
+
+            case R.id.reading:
+                DirectoryFragment readingFragment = new DirectoryFragment();
+                Bundle readingBundle = new Bundle();
+                readingBundle.putString("subject", "reading");
+                readingBundle.putBoolean("downloaded", false);
+                readingFragment.setArguments(readingBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, readingFragment, "NewFragmentTag").addToBackStack("true").commit();
+                break;
+
+            case R.id.writing:
+                DirectoryFragment writingFragment = new DirectoryFragment();
+                Bundle writingBundle = new Bundle();
+                writingBundle.putString("subject", "writing");
+                writingBundle.putBoolean("downloaded", false);
+                writingFragment.setArguments(writingBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, writingFragment, "NewFragmentTag").addToBackStack("true").commit();
+                break;
+
+            case R.id.history:
+                DirectoryFragment historyFragment = new DirectoryFragment();
+                Bundle historyBundle = new Bundle();
+                historyBundle.putString("subject", "history");
+                historyBundle.putBoolean("downloaded", false);
+                historyFragment.setArguments(historyBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, historyFragment, "NewFragmentTag").addToBackStack("true").commit();
+                break;
+
+            case R.id.other:
+                DirectoryFragment otherFragment = new DirectoryFragment();
+                Bundle otherBundle = new Bundle();
+                otherBundle.putString("subject", "other");
+                otherBundle.putBoolean("downloaded", false);
+                otherFragment.setArguments(otherBundle);
+
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, otherFragment, "NewFragmentTag").addToBackStack("true").commit();
                 break;
 
             case R.id.online_classes:

@@ -6,5 +6,79 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/algebraLayout"
-    android:background="#fff">
+    android:background="#D3D3D3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask An Anonymous Question?"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:id="@+id/ask"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About App"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creators:"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jacob Stacy"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dauan Hendley"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taylor Haid"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jakayla Potter"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Version: 2.25.3"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#C0C0C0"/>
 </LinearLayout>

@@ -16,6 +16,7 @@ import android.content.res.Configuration;
 import android.database.Cursor;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -28,7 +29,10 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity{
@@ -47,6 +51,8 @@ public class MainActivity extends AppCompatActivity{
 
     DatabaseHelper mDatabaseHelper;
 
+    private ArrayList<String> filesInDir = new ArrayList<String>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,8 @@ public class MainActivity extends AppCompatActivity{
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        listAssetFiles("Available/Algebra");
 
     }
     
@@ -93,26 +101,30 @@ public class MainActivity extends AppCompatActivity{
         }
     };
 
-//    public void AddData(String newEntry){
-//        boolean insertData = mDatabaseHelper.addData(newEntry);
-//
-//        if(insertData)
-//            toastMessage("Data Inserted");
-//        else
-//            toastMessage("Something went Wrong");
-//
-//    }
 
+    private boolean listAssetFiles(String path) {
 
-//    private void populateListView(){
-//        Cursor data = mDatabaseHelper.getData();
-//        ArrayList<String> listData = new ArrayList<>();
-//
-//        while(data.moveToNext()){
-//            listData.add(data.getString(1));
-//        }
-//
-//    }
+        String [] list;
+        try {
+            list = getAssets().list(path);
+            if (list.length > 0) {
+                // This is a folder
+                for (String file : list) {
+                    if (!listAssetFiles(path + "/" + file))
+                        return false;
+                    else {
+                        // This is a file
+                        filesInDir.add(file);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            return false;
+        }
+
+        return true;
+    }
+
 
 
 

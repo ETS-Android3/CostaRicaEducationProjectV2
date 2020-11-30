@@ -78,6 +78,7 @@
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
+                        android:id="@+id/algebra"
                         >
                         <TextView
                             android:layout_width="match_parent"
@@ -96,7 +97,8 @@
                         app:cardBackgroundColor="#E8E8E8"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/writing">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -114,7 +116,8 @@
                         app:cardBackgroundColor="#E8E8E8"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/reading">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -132,7 +135,8 @@
                         app:cardBackgroundColor="#E8E8E8"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/geometry">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -150,7 +154,8 @@
                         app:cardBackgroundColor="#E8E8E8"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/history">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -168,7 +173,8 @@
                         app:cardBackgroundColor="#E8E8E8"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp">
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/other">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
