@@ -30,7 +30,7 @@ public class MoreFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSdLhGZt-4_ulAv87orLqKITLckPX_L1kTwYMWboSAPHGEqDhA/viewform/")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://forms.gle/jCrdG5r532Z3ave66")));
             }
 
         });

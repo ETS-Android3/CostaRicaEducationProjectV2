@@ -8,19 +8,6 @@
     android:id="@+id/algebraLayout"
     android:background="#D3D3D3">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ask An Anonymous Question?"
-        android:textSize="20dp"
-        android:background="#D3D3D3"
-        android:id="@+id/ask"
-        android:padding="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -81,4 +68,24 @@
         android:padding="10dp"
         android:layout_marginLeft="10dp"
         android:textColor="#C0C0C0"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask An Anonymous Question?"
+        android:textSize="20dp"
+        android:background="#D3D3D3"
+        android:id="@+id/ask"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
 </LinearLayout>
