@@ -135,7 +135,7 @@ public class FeedFragment extends Fragment {
 
         mName.add("John Johnson");
         mDate.add("Oct. 30");
-        mTitle.add("A new worksheet has been added to Algabra");
+        mTitle.add("A new worksheet has been added to Algabra.");
         mSubtext.add(null);
 
 
